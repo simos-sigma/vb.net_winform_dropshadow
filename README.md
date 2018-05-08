@@ -1,2 +1,2 @@
 # VB.NET WINFORM DROPSHADOW
-A VB.NET Winform DropShadow Class.
+VB.NET Winform DropShadow Demo.

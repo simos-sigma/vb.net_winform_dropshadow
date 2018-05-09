@@ -1,0 +1,10 @@
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\bin\Debug\DropShadowDemo.exe
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\bin\Debug\DropShadowDemo.pdb
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\bin\Debug\DropShadowDemo.xml
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\obj\Debug\DropShadowDemo.DemoForm1.resources
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\obj\Debug\DropShadowDemo.Resources.resources
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\obj\Debug\DropShadowDemo.vbproj.GenerateResource.cache
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\obj\Debug\DropShadowDemo.vbproj.CoreCompileInputs.cache
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\obj\Debug\DropShadowDemo.exe
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\obj\Debug\DropShadowDemo.xml
+X:\PROGRAMMING\VISUAL STUDIO PROJECTS\VB.NET\2018\DropShadowDemo\DropShadowDemo\obj\Debug\DropShadowDemo.pdb

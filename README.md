@@ -53,4 +53,4 @@ _Shadow.RefreshShadow()
 ```
 As you will see in Demo project, you should also manually do `_Shadow.RefreshShadow()` every time that form changes state or size. For example, when form changes state from `FormWindowState.Normal` to `FormWindowState.Maximized` or when you resize the form using a resize handler.
 
-You can download only the DropShadow class file from <a href="https://github.com/simonetos/vb.net_winform_dropshadow/blob/master/DropShadowDemo/DropShadow.vb" target="_blank">here</a>.
+You can find the DropShadow class file <a href="https://github.com/simonetos/vb.net_winform_dropshadow/blob/master/DropShadowDemo/DropShadow.vb" target="_blank">here</a>.

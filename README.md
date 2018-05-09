@@ -4,7 +4,7 @@
 # EXAMPLES
 <img src="https://i.imgur.com/xf7ydd3.png" height="45%" width="45%"></img> <img src="https://i.imgur.com/AIvfFL4.png" height="45%" width="45%"></img><br/><br/>
 # USAGE
-Here is an example of how you can use DropShadow class into your form's code.
+Here is an example of how you can use <b>DropShadow</b> class into your form's code.
 ```VB.NET
 Public Class Form1
 

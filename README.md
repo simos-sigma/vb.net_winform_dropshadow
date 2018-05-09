@@ -10,7 +10,8 @@ By including this class into your VB.NET Winforms...
 3. You can set shadow's <b>horizontal</b> and <b>vertical</b> position using <b>negative</b> and <b>positive</b> values.
 4. You can make form's shadow looks blurred.
 5. You can change shadow's <b>color</b> and <b>opacity</b>.
-6. And finaly, you can add shadow radius.
+6. And finaly, you can add shadow <b>radius</b>.
+7. You can also add <b>form radius</b> (manualy!!!).
 # USAGE
 Here is an example of how you can use <b>DropShadow</b> class into your form's code.
 ```VB.NET

@@ -51,3 +51,4 @@ If you want to add radius to your form, you should do that manualy.
 Me.Region = Region.FromHrgn(Win32.CreateRoundRectRgn(0, 0, Me.Width + 1, Me.Height + 1, ***, ***))
 _Shadow.RefreshShadow()
 ```
+As you can see in Demo project, you should also manually do `_Shadow.RefreshShadow()` every time that form changes state or size.

@@ -38,18 +38,7 @@ End Class
 ```
 If you want to add radius to your form, you should do that manualy.
 ```VB.NET
-Public Class Form1
-        
-    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
-        If Not DesignMode Then
-	    _Shadow = New Dropshadow(Me) With {
-                '((( DropShadow's properties... )))
-            }
-	    '((( Replace *** with a number of your choice. ))) 
-	    Me.Region = Region.FromHrgn(Win32.CreateRoundRectRgn(0, 0, Me.Width + 1, Me.Height + 1, ***, ***))
-	    _Shadow.RefreshShadow()
-        End If
-    End Sub
-	
-End Class
+'((( Replace *** with a number of your choice. )))
+Me.Region = Region.FromHrgn(Win32.CreateRoundRectRgn(0, 0, Me.Width + 1, Me.Height + 1, ***, ***))
+_Shadow.RefreshShadow()
 ```

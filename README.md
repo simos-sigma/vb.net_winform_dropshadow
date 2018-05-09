@@ -45,7 +45,7 @@ Public Class Form1
 	
 End Class
 ```
-If you want to add radius to your form, you should do that manualy.
+And how you can add <b>form radius</b>. You should do that manualy.
 ```VB.NET
 '((( Replace *** with a number of your choice. )))
 Me.Region = Region.FromHrgn(Win32.CreateRoundRectRgn(0, 0, Me.Width + 1, Me.Height + 1, ***, ***))

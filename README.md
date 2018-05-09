@@ -8,14 +8,17 @@ Here is an example of how you can use <b>DropShadow</b> class into your form's c
 ```VB.NET
 Public Class Form1
 
+    '((( Declare DropShadow class. )))
     Public _Shadow As Dropshadow
-
+    
+    '((( Add the necessary initializations for your form. )))
     Public Sub New()
         InitializeComponent()
         Me.FormBorderStyle = FormBorderStyle.None
         Me.DoubleBuffered = True
     End Sub
     
+    '((( And here we go... )))
     Private Sub DemoForm_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         If Not DesignMode Then
             _Shadow = New Dropshadow(Me) With {

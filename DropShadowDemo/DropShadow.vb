@@ -1,4 +1,4 @@
-﻿Imports System.Runtime.InteropServices
+Imports System.Runtime.InteropServices
 Imports System.Drawing.Imaging
 Imports System.Drawing.Drawing2D
 
@@ -6,17 +6,21 @@ Imports System.Drawing.Drawing2D
 ''' Dropshadow.
 ''' Add a shadow to a WinForm.
 ''' </summary>
-Public Class DropShadow
+Public Class Dropshadow
     Inherits Form
 
-    '((( VARIABLES )))
+#Region "(((DECLARATIONS)))"
     Private _shadowBitmap As Bitmap
     Private _shadowColor As Color
     Private _shadowH As Integer
     Private _shadowOpacity As Byte = 255
     Private _shadowV As Integer
+    Public Property ShadowBlur() As Integer
+    Public Property ShadowSpread() As Integer
+    Public Property ShadowRadius() As Integer
+#End Region
 
-    '((( PROPERTIES )))
+#Region "(((PROPERTIES)))"
     Public Property ShadowColor() As Color
         Get
             Return _shadowColor
@@ -88,9 +92,6 @@ Public Class DropShadow
             RefreshShadow(False)
         End Set
     End Property
-    Public Property ShadowBlur() As Integer
-    Public Property ShadowSpread() As Integer
-    Public Property ShadowRadius() As Integer
     Protected Overrides ReadOnly Property CreateParams() As CreateParams
         Get
             Dim cp As CreateParams = MyBase.CreateParams
@@ -99,8 +100,9 @@ Public Class DropShadow
             Return cp
         End Get
     End Property
+#End Region
 
-    '((( EVENTS )))
+#Region "(((EVENTS)))"
     Public Sub New(ByVal f As Form)
         Owner = f
         ShadowColor = Color.Black
@@ -184,8 +186,9 @@ Public Class DropShadow
             Win32.DeleteDC(memDc)
         End Try
     End Sub
+#End Region
 
-    '((( FUNCTIONS )))
+#Region "(((FUNCTIONS)))"
     Public Shared Function DrawShadowBitmap(width As Integer, height As Integer, borderRadius As Integer, blur As Integer, spread As Integer, color As Color) As Bitmap
         Dim ex As Integer = blur + spread
         Dim w As Integer = width + ex * 2
@@ -247,23 +250,29 @@ Public Class DropShadow
         End If
         Return bitmap
     End Function
+#End Region
 End Class
 
 
 
 Friend Class Win32 '((( Class that exposes needed win32 gdi functions. )))
 
+#Region "(((ENUMERATIONS)))"
     Public Enum Bool
         [False] = 0
         [True]
     End Enum
+#End Region
 
+#Region "(((DECLARATIONS)))"
     Public Const ULW_COLORKEY As Int32 = &H1
     Public Const ULW_ALPHA As Int32 = &H2
     Public Const ULW_OPAQUE As Int32 = &H4
     Public Const AC_SRC_OVER As Byte = &H0
     Public Const AC_SRC_ALPHA As Byte = &H1
+#End Region
 
+#Region "(((FUNCTIONS)))"
     '((( x-coordinate of upper-left corner.  )))
     '((( y-coordinate of upper-left corner.  )))
     '((( x-coordinate of lower-right corner. )))
@@ -316,6 +325,9 @@ Friend Class Win32 '((( Class that exposes needed win32 gdi functions. )))
     <DllImport("gdi32.dll", ExactSpelling:=True, SetLastError:=True)>
     Public Shared Function DeleteObject(hObject As IntPtr) As Bool
     End Function
+#End Region
+
+#Region "(((STRUCTURES)))"
     <StructLayout(LayoutKind.Sequential, Pack:=1)>
     Private Structure ARGB
         Public ReadOnly Blue As Byte
@@ -348,4 +360,6 @@ Friend Class Win32 '((( Class that exposes needed win32 gdi functions. )))
             Me.cy = cy
         End Sub
     End Structure
+#End Region
+
 End Class
